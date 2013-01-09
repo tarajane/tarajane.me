@@ -1,0 +1,12 @@
+---
+layout: default
+title: "tj's blog"
+---
+
+<ul class="posts unstyled clearfix">
+    {% for post in site.posts %}
+      <li>
+      	<a href="{{ post.url }}"><span class="date">{{ post.date | date_to_string }} : </span>{{ post.title }}</a>
+      </li>
+    {% endfor %}
+</ul>
