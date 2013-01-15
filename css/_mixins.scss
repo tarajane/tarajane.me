@@ -1,0 +1,25 @@
+/**
+ * MIXINS 
+ */
+@mixin dashed-container {
+    $side: bottom;
+
+    border-#{$side}: 1px dashed #e2e2e2;
+    padding-#{$side}: 10px;
+    width: 90%;
+    margin: 0 5% 0 5%;
+}
+
+@mixin unstyled-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin link {
+    color: #276170;
+
+    &:hover {
+        border-bottom: 1px dotted #276170;
+    }
+}

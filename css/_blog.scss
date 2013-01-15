@@ -1,0 +1,138 @@
+
+/**
+ * BLOG STYLES
+ */
+.posts {
+    li {
+        height: 80px;
+        line-height: 80px;
+        border-bottom: $border-style;
+        text-align: center;
+
+        .date {
+            padding-right: 20px;
+        }
+
+        a {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            display: block;
+        }
+    }
+}
+
+.post {
+    font-weight: 400;
+    width: 90%;
+    margin: 0 auto;
+
+    h1 {
+        margin: 0;
+        font-weight: inherit;
+        text-align: center;
+    }
+
+    .twitter-share-button {
+        display: block;
+        position: relative;
+        padding-top: 12px;
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.6em;
+        text-align: left;
+    }
+
+    img {
+        max-width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .date {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+    }
+
+    ul {
+        @include unstyled-list;
+    }
+
+    li img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    a {
+        border-bottom: 1px dotted black;
+
+        &:hover {
+            border-bottom: 1px dotted #7dff34;
+            color: #7dff34;
+        }
+    }
+}
+
+.posts.recent {
+    padding-bottom: 40px;
+    font-weight: normal;
+
+    li {
+        border-bottom: none;
+        height: 50px;
+        line-height: 16px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.recent-post {
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+@media only screen and (min-width: 31.25em) { /** 500px / 16px = 31.25em **/
+
+    .post {
+        width: 70%;
+    }
+
+    .posts.recent {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+}
+
+@media only screen and (min-width: 53.125em) { /** 850px / 16px = 53.125em **/
+    .posts {
+        li {
+            text-align: left;
+            padding-left: 40px;
+            border-bottom: none;
+            height: 40px;
+        }
+    }
+
+    .post {
+        padding-top: 30px;
+        width: 60%;
+        max-width: 600px;
+
+        p {
+            line-height: 1.4em;
+        }
+
+        ul {
+            ul {
+                margin-left: 40px;
+            }
+        }
+    }
+}
