@@ -12,12 +12,3 @@ title: "tj"
 	<li>I sometimes <a href="/resume.html#talks">talk</a> about such work at meetups and conferences.</li>
 	<li>And can otherwise be found being a <a target="_blank" href="http://www.rdio.com/people/tarajane/">music nerd</a>, <a target="_blank" href="http://pinboard.in/u:tarajane">reading the internet</a>, <a target="_blank" href="http://www.yelp.com/biz/papa-november-san-francisco">drinking coffee</a>, or indulging in <a target="_blank" href="http://www.toronado.com/">tasty ales</a> with friends.</li>
 </ul>
-
-<h3 class="recent-post">Recent posts: </h3>
-<ul class="posts recent unstyled clearfix">
-    {% for post in site.posts limit:3 offset:0 %}
-      <li>
-      	<a href="{{ post.url }}"><span class="date">{{ post.date | date_to_string }} : </span>{{ post.title }}</a>
-      </li>
-    {% endfor %}
-</ul>
