@@ -1,48 +1,33 @@
 /**
- * VARIABLES 
+ * VARIABLES
  */
-$twitter-color: #00bcf5;
-$instagram-color: #cab7a5;
-$pinterest-color: #cb2027;
-$octocat-color: #000000;
-$rdio-color: #008fd5;
-$lastfm-color: #ffffff;
-$tumblr-color: #c3ccd5;
 
-$title-color: white;
-$link-color: black;
-$border-color: #e2e2e2;
+$whoBackgroundColor: #EF9676;
+$whoTitleColor: #FFFBF9;
+$whoSubtitleColor: #DF0000;
 
-$header-font: "quimby-mayoral",sans-serif;
-$body-font: "museo-slab", serif;
+$detailsBackgroundColor: #FFFBF9;
+$detailsTitleColor: #FF5D5B;
+$detailsSubtitleColor: #B9063B;
 
-$sidebar-background-image: url('../../img/green_gobbler.png');
-$navigation-background-image: url('../../img/corrugation.png');
+$whatBackgroundColor: #FF5D5B;
+$whatTitleColor: #F5D7A0;
+$whatSubtitleColor: #EDD5BE;
 
-$border-style: 1px solid $border-color;
+$whereBackgroundColor: #F5D7A0;
+$whereTitleColor: #F70000;
+$whereSubtitleColor: #002538;
 
+$howBackgroundColor: #F70000;
+$howTitleColor: #F2B0A3;
+$howSubtitleColor: #F7B98A;
 
-/**
- * REUSABLE CLASSES 
- */
-.center {
-    text-align: center;
-}
+$linkColor: white;
 
-.light {
-    font-weight: 400;
-}
+$copyTransparency: 0.8;
 
-.unstyled {
-    @include unstyled-list;
-}
-
-.styled-link {
-    a {
-        @include link;
-    }
-}
-
-.strikethrough {
-    text-decoration: line-through;
+@font-face {
+    font-family: "p22-underground", sans-serif;
+    font-style: normal;
+    font-weight: 900;
 }
