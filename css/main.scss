@@ -169,7 +169,22 @@ body {
 /* ==========================================================================
    Author Media Queries
    ========================================================================== */
-@media only screen and (min-width: 31.25em) { /** 500px / 16px = 31.25em **/
+@media only screen and (min-width: 40.625em) { /** 650px / 16px = 40.625em **/
+    .content {
+        section {
+            height: 100vh;
+            max-height: 100vh;
+        }
+
+        .title {
+            font-size: 4em;
+            line-height: 1;
+            max-width: 80%;
+        }
+    }
+}
+
+@media only screen and (min-height: 36.25em) and (min-width: 40.625em) {
     .content {
         section {
             height: 100vh;
