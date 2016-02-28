@@ -1,3 +1,33 @@
 /**
  * VARIABLES
  */
+
+$whoBackgroundColor: #EF9676;
+$whoTitleColor: #FFFBF9;
+$whoSubtitleColor: #DF0000;
+
+$detailsBackgroundColor: #FFFBF9;
+$detailsTitleColor: #FF5D5B;
+$detailsSubtitleColor: #B9063B;
+
+$whatBackgroundColor: #FF5D5B;
+$whatTitleColor: #F5D7A0;
+$whatSubtitleColor: #EDD5BE;
+
+$whereBackgroundColor: #F5D7A0;
+$whereTitleColor: #F70000;
+$whereSubtitleColor: #002538;
+
+$howBackgroundColor: #F70000;
+$howTitleColor: #F2B0A3;
+$howSubtitleColor: #F7B98A;
+
+$linkColor: white;
+
+$copyTransparency: 0.8;
+
+@font-face {
+    font-family: "p22-underground", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+}
